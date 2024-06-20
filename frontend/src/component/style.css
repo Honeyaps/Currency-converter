@@ -1,5 +1,91 @@
-*{
-    margin: 0;
-    padding: 0;
+body{
+    background-image: url("bg_img.jpg");
 }
 
+.currency-converter {
+    max-width: 400px;
+    position: absolute;
+    left: 36%;
+    top: 20%;
+    padding: 20px;
+    height: 350px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #000000;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#amount{
+    width: 94%;
+}
+
+.currency-converter h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.converter-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.loading-message,
+.error-message,
+.result-message {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.loading-message {
+    color: #007bff;
+}
+
+.error-message {
+    color: #dc3545;
+}
+
+.result-message {
+    color: #28a745;
+}
